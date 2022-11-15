@@ -5,7 +5,7 @@
 */
 
 function run(fn){
-    return fn()
+    return `Result ${fn()}`
 }
 
 function sayHello(){
