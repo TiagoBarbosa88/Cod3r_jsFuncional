@@ -1,19 +1,25 @@
-function finalPrice(tax, price){
-    return price * (1 + tax)
+/* 
+* A programming language is said to have
+* First-Class functions when functions in
+* That language are treated like any other
+* Variable
+*/
+
+
+const add = function(a, b){
+    return a + b
 }
 
-console.log(finalPrice(0.0875, 25.1));
-console.log(finalPrice(0.0875, 21.7));
-console.log(finalPrice(0.0875, 107.9));
-
-
-// Curring
-function finalPrice2(tax){
-    return function(price){
-        return price * (1 + tax)
-    }
+const subtract = function(a,b){
+    return a - b
 }
 
-const nyFinalPrice = finalPrice2(0.085)
+const multiplication = (a, b) => a * b;
 
-console.log(nyFinalPrice(20.01));
+const division = (a, b) => a / b 
+
+
+console.log(add(10,20));
+console.log(subtract(10,20));
+console.log(multiplication(10,20));
+console.log(division(10,20));
