@@ -12,8 +12,6 @@ const media = (acc, el,i, array) => {
     }
 }
 
-
-const total2 = numbers.reduce(media)
-console.log(total2);
+console.log(numbers.reduce(media));
 
 
