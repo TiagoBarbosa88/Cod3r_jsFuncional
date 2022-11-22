@@ -14,7 +14,7 @@ console.log(somarAB(5));
 console.log(somar(10)(10)(10));
 
 
-// fb -> 3 * 7 
+// fn -> 3 * 7 
 // fn -> 3 + 7
 // fn -> 3 - 7
 
