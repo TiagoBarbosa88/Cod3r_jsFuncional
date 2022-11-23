@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Somar</title>
+</head>
+
+<body>
+  <h1>Somar Contas</h1>
+  <div class="container">
+    <div class="input-container">
+      <label for="number">Conta 01</label>
+      <input type="number" id="contas">
+    </div>
+
+    <div class="input-container">
+      <label for="number">Conta 02</label>
+      <input type="number" id="contas1">
+    </div>
+
+    <div class="input-container">
+      <label for="number">Conta 03</label>
+      <input type="number" id="contas2">
+    </div>
+
+    <div class="input-container">
+      <button type="submit" id="calcular" onclick="calcular()">Calcular</button>
+    </div>
+
+    <div class="input-container">
+      <label for="resultado">Total</label>
+      <textarea name="" id="resultado" rows="1" disabled></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
