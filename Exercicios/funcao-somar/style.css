@@ -10,9 +10,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 10px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+}
+h1{ 
+  font-size: 30px;
+  color: azure;
 }
 
 .container {
