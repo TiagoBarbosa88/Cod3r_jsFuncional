@@ -11,3 +11,19 @@ function captura() {
  
 }
 
+
+
+function calcular(){
+ let conta = document.querySelector('#conta').value
+console.log(conta);
+
+}
+
+
+  let contas = [20,120]
+  //const contas = document.querySelector('#conta').ariaValueMax;
+  let meuArray = String(contas).split(',').map((contas)=>{
+    return Number(contas)
+  });
+
+  //console.log(meuArray);
