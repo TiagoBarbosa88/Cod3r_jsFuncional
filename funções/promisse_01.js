@@ -1,18 +1,18 @@
-
-
+/* 
 function primeiroElemento(array){
   return array[3]
 }
+ */
 
-const primeiraLetra = (string) => string[0]
-
-const letraMinuscula = (letra) => letra.toLowerCase()
+const primeiroElemento = arrayOuString => arrayOuString[0]
+const letraMinuscula = letra => letra.toLowerCase()
 
 let p = new Promise(function(resolve){
   resolve(['Ana', "Bia", 'Carlos', 'Daniel'])
 })
 
   .then(primeiroElemento)
-  .then(primeiraLetra)
+  .then(primeiroElemento)
   .then(letraMinuscula)
+  // .then(v => console.log(v))
   .then(console.log)
