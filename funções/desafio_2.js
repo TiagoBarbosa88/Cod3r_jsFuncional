@@ -6,13 +6,26 @@ const carrinho = [
   {nome: "Tesoura", qtde: 1, preco: 19.20, fragil: true},
 ]
 
+Array.prototype.meuReduce = function(fn, inicial){
+  let acc = inicial
+
+  for(let i = 0; i < this.length; i++){
+    if(!acc && i === 0){
+      acc = this[i]
+    } else {
+      acc = fn(acc, this[i], i , this)      
+    }
+  } 
+  return acc  
+}
+
 
 // Desafio filter, map, reduce
 
 const media = carrinho
       .filter(item => item.fragil)
       .map(item => item.qtde * item.preco)
-      .reduce((acc, el) =>{
+      .meuReduce((acc, el) =>{
         const novaQtde = acc.qtde + 1
         const novoTotal = acc.total + el
         console.log(acc, el);
